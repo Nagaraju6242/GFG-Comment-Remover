@@ -1,0 +1,28 @@
+{
+	"manifest_version": 3,
+	"name": "Remove Comments from GFG code",
+	"version": "1.0",
+	"description": "Remove comments from GFG code when you copy it",
+	"content_scripts": [
+		{
+			"matches": ["https://www.geeksforgeeks.org/*"],
+			"js": ["jquery-3.6.1.min.js", "script.js"],
+			"css": ["removeComments.css"],
+			"run_at": "document_idle",
+			"all_frames": false
+		}
+	],
+	"permissions": ["activeTab"],
+	"options_page": "options.html",
+	"web_accessible_resources": [
+		{
+			"resources": ["removeComments.js"],
+			"matches": ["https://www.geeksforgeeks.org/*"]
+		}
+	],
+	"icons": {
+		"16": "icons/chat 32x32.png",
+		"32": "icons/chat 32x32.png",
+		"128": "icons/chat 32x32.png"
+	}
+}

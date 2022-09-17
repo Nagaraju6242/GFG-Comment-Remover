@@ -1,0 +1,12 @@
+#copy-code-without-comments-button {
+	position: relative;
+}
+
+#copy-code-without-comments-button::before {
+	content: "#";
+	font-size: 13px;
+	position: absolute;
+	top: 58%;
+	left: 54%;
+	transform: translate(-50%, -50%);
+}
