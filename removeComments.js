@@ -26,8 +26,6 @@ function getCodeValueWithoutComments(e) {
 	return t;
 }
 
-var naga = "HEllo";
-
 startRemoveComments();
 
 function startRemoveComments() {
